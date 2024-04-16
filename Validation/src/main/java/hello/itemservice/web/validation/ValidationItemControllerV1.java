@@ -47,7 +47,7 @@ public class ValidationItemControllerV1 {
         // 검증 오류 결과를 보관
         Map<String, String> errors = new HashMap<>();
 
-        // 검증 로직
+        // 검증 로직(타입 오류는 컨트롤러 호출 전에 예외가 발생해서 여전히 타입 검증은 불가능)
         // 특정 필드 검증
         if (!StringUtils.hasText(item.getItemName())) {  // itemName에 문자열이 없으면
             errors.put("itemName", "상품 이름은 필수입니다.");
