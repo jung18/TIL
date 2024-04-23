@@ -2,7 +2,6 @@ package hello.exception.api;
 
 import hello.exception.exception.BadRequestException;
 import hello.exception.exception.UserException;
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
